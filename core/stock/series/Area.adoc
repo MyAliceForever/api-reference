@@ -1,6 +1,5 @@
 /**
- * Define Area series type.<br/>
- * <b>Note:</b> Use {@link anychart.charts.Cartesian#area} method to get this series.
+ * Define Area series type.
  * @param {(anychart.data.View|anychart.data.Set|Array|string)=} opt_data Data for the series.
  * @param {Object.<string, (string|boolean)>=} opt_csvSettings If CSV string is passed, you can pass CSV parser settings
  *    here as a hash map.
@@ -20,7 +19,8 @@ anychart.core.stock.series.Area;
  * Getter for current hatch fill settings.
  * @shortDescription Hatch fill settings.
  * @category Coloring
- * @example anychart.core.stock.series.Area.hatchFill_get
+ * @listing See listing
+ * var currentHatchFill = series.hatchFill();
  * @return {anychart.graphics.vector.PatternFill|anychart.graphics.vector.HatchFill|Function} The current hatch fill.
  */
 anychart.core.stock.series.Area.prototype.hatchFill;
@@ -49,7 +49,8 @@ anychart.core.stock.series.Area.prototype.hatchFill;
  * Getter for current hover hatch fill settings in hover mode.
  * @shortDescription Hatch fill settings in hover mode.
  * @category Coloring
- * @example anychart.core.stock.series.Area.hoverHatchFill_get
+ * @listing See listing
+ * var currentHoverHatchFill = series.hoverHatchFill();
  * @return {anychart.graphics.vector.PatternFill|anychart.graphics.vector.HatchFill|Function} The current hover hatch fill.
  */
 anychart.core.stock.series.Area.prototype.hoverHatchFill;
@@ -85,7 +86,7 @@ anychart.core.stock.series.Area.prototype.hoverHatchFill;
 anychart.core.stock.series.Area.prototype.fill;
 
 /**
- * Sets fill settings using an object or a string.
+ * Sets fill settings using an array or a string.
  * {docs:Graphics/Fill_Settings}Learn more about coloring.{docs}
  * @example anychart.core.stock.series.Area.fill_set_asString Using string
  * @example anychart.core.stock.series.Area.fill_set_asArray Using array
