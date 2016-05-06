@@ -9,19 +9,25 @@
             var dataTable = anychart.data.table();
             dataTable.addData(get_dji_daily_short_data());
 
-            var mapping = dataTable.mapAs({value: 1});
+            var mapping = dataTable.mapAs({
+                open: 1,
+                high: 2,
+                low: 3,
+                close: 4
+            });
 
             chart = anychart.stock();
             chart.padding(10, 10, 10, 50);
 
             var currentPlot = chart.plot();
 
-            var series = currentPlot.area(mapping);
+            var series = currentPlot.candlestick(mapping);
+            series.hoverRisingFill("#4CAF50");
 
-            // Set hoverHatchFill.
-            series.hoverHatchFill("horizontal", "#FAFAFA", 1, 5);
+            // Get hover rising fill.
+            var currentHoverRisingFill = series.hoverRisingFill();
 
-            chart.title("Set hover hatch fill. Hover on the legend.");
+            chart.title({fontColor: currentHoverRisingFill, text: "Get and use hover rising fill. Hover on the legend."});
             chart.container('container');
             chart.draw();
         });

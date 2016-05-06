@@ -1,4 +1,3 @@
-<html>
 <head>
     <meta charset="UTF-8"/>
     <meta name="x-cat-tags" content="stock"/>
@@ -17,11 +16,12 @@
             var currentPlot = chart.plot();
 
             var series = currentPlot.area(mapping);
+            series.hoverFill("#c5e1a5");
 
-            // Set hoverHatchFill.
-            series.hoverHatchFill("horizontal", "#FAFAFA", 1, 5);
+            // Get series hoverFill.
+            var currentHoverFill = series.hoverFill();
 
-            chart.title("Set hover hatch fill. Hover on the legend.");
+            chart.title({fontColor: currentHoverFill, text: "Get and use hover fill."});
             chart.container('container');
             chart.draw();
         });

@@ -18,10 +18,12 @@
 
             var series = currentPlot.area(mapping);
 
-            // Set hoverHatchFill.
-            series.hoverHatchFill("horizontal", "#FAFAFA", 1, 5);
+            // Set fill.
+            series.fill(function() {
+                return this.sourceColor + " 0.9"
+            });
 
-            chart.title("Set hover hatch fill. Hover on the legend.");
+            chart.title("Set fill parameter as a function.");
             chart.container('container');
             chart.draw();
         });

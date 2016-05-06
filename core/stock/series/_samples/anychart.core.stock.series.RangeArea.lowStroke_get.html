@@ -9,19 +9,23 @@
             var dataTable = anychart.data.table();
             dataTable.addData(get_dji_daily_short_data());
 
-            var mapping = dataTable.mapAs({value: 1});
+            var mapping = dataTable.mapAs({
+                high: 1,
+                low: 3
+            });
 
             chart = anychart.stock();
             chart.padding(10, 10, 10, 50);
 
             var currentPlot = chart.plot();
 
-            var series = currentPlot.area(mapping);
+            var series = currentPlot.rangeArea(mapping);
+            series.lowStroke("#F44336");
 
-            // Set hoverHatchFill.
-            series.hoverHatchFill("horizontal", "#FAFAFA", 1, 5);
+            // Get low stroke.
+            var currentLowStroke = series.lowStroke();
 
-            chart.title("Set hover hatch fill. Hover on the legend.");
+            chart.title({fontColor: currentLowStroke, text: "Get and use low stroke"});
             chart.container('container');
             chart.draw();
         });

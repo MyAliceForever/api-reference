@@ -16,12 +16,12 @@
 
             var currentPlot = chart.plot();
 
-            var series = currentPlot.area(mapping);
+            var series = currentPlot.marker(mapping);
 
-            // Set hoverHatchFill.
-            series.hoverHatchFill("horizontal", "#FAFAFA", 1, 5);
+            // Set hatchFill.
+            series.hatchFill("horizontal", "#000000", 1, 3);
 
-            chart.title("Set hover hatch fill. Hover on the legend.");
+            chart.title("Set hatchFill.");
             chart.container('container');
             chart.draw();
         });

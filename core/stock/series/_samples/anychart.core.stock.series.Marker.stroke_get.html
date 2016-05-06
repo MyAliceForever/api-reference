@@ -16,12 +16,13 @@
 
             var currentPlot = chart.plot();
 
-            var series = currentPlot.area(mapping);
+            var series = currentPlot.marker(mapping);
+            series.stroke("#C5E1A5");
 
-            // Set hoverHatchFill.
-            series.hoverHatchFill("horizontal", "#FAFAFA", 1, 5);
+            // Get stroke.
+            var currentStroke = series.stroke();
 
-            chart.title("Set hover hatch fill. Hover on the legend.");
+            chart.title({fontColor: currentStroke, text: "Get and use stroke."});
             chart.container('container');
             chart.draw();
         });

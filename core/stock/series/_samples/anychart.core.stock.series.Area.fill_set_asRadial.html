@@ -18,10 +18,10 @@
 
             var series = currentPlot.area(mapping);
 
-            // Set hoverHatchFill.
-            series.hoverHatchFill("horizontal", "#FAFAFA", 1, 5);
+            // Set fill.
+            series.fill(["#FEFEFE", "#424242"], 0.6, 0.5, null, 0.8, 0.9, 0.31);
 
-            chart.title("Set hover hatch fill. Hover on the legend.");
+            chart.title("Set fill parameter as a radial gradient.");
             chart.container('container');
             chart.draw();
         });
