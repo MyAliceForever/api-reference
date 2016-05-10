@@ -238,7 +238,7 @@ anychart.core.stock.series.RangeArea.prototype.hoverHatchFill;
 /**
  * Setter for hover hatch fill settings.
  * {docs:Graphics/Hatch_Fill_Settings}Learn more about hatch fill settings.{docs}
- * @example anychart.core.stock.series.RangeArea.hoverHatchFill
+ * @example anychart.core.stock.series.RangeArea.hoverHatchFill_set
  * @param {(anychart.graphics.vector.PatternFill|anychart.graphics.vector.HatchFill|Function|anychart.graphics.vector.HatchFill.HatchFillType|
  * string)=} opt_patternFillOrType PatternFill or HatchFill instance or type of hatch fill.
  * @param {string=} opt_color Color.

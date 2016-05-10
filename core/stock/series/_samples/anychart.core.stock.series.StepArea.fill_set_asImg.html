@@ -16,12 +16,16 @@
 
             var currentPlot = chart.plot();
 
-            var series = currentPlot.splineArea(mapping);
+            var series = currentPlot.stepArea(mapping);
 
-            // Set hover fill.
-            series.hoverFill("#4CAF50", 0.2);
+            // Set image fill.
+            series.fill({
+                src: "http://static.anychart.com/images/underwater.jpg",
+                mode: "stretch",
+                opacity: 0.5
+            });
 
-            chart.title("Set hover fill with opacity. Hover on the legend.");
+            chart.title("Set image fill.");
             chart.container("container");
             chart.draw();
         });

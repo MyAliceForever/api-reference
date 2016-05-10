@@ -16,12 +16,13 @@
 
             var currentPlot = chart.plot();
 
-            var series = currentPlot.splineArea(mapping);
+            var series = currentPlot.stepLine(mapping);
+            series.stroke("#C5E1A5");
 
-            // Set hover fill.
-            series.hoverFill("#4CAF50", 0.2);
+            // Get stroke.
+            var currentStroke = series.stroke();
 
-            chart.title("Set hover fill with opacity. Hover on the legend.");
+            chart.title({fontColor: currentStroke, text: "Get and use stroke."});
             chart.container("container");
             chart.draw();
         });

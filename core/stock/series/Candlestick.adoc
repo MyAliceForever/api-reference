@@ -151,8 +151,9 @@ anychart.core.stock.series.Candlestick.prototype.risingFill;
 /**
  * Sets rising fill settings using string.
  * {docs:Graphics/Hatch_Fill_Settings}Learn more about hatch fill settings.{docs}
- * @example anychart.core.stock.series.Candlestick.risingFill_set_asString
- * @param {anychart.graphics.vector.Fill} value Color as an object or a string.
+ * @example anychart.core.stock.series.Candlestick.risingFill_set_asString Using string
+ * @example anychart.core.stock.series.Candlestick.risingFill_set_asArray Using array
+ * @param {anychart.graphics.vector.Fill} value Color as an array or a string.
  * @return {anychart.core.stock.series.Base} Self instance for method chaining.
  */
 anychart.core.stock.series.Candlestick.prototype.risingFill;

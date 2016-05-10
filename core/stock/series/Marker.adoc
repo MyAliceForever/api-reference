@@ -462,7 +462,6 @@ anychart.core.stock.series.Marker.prototype.selectFill;
 /**
  * Image fill in selected mode.
  * {docs:Graphics/Fill_Settings}Learn more about coloring.{docs}
- * @example anychart.core.stock.series.Marker.selectFill_set_asImg
  * @param {!anychart.graphics.vector.Fill} imageSettings Object with settings.
  * @return {anychart.core.stock.series.Marker} Self instance for method chaining.
  */

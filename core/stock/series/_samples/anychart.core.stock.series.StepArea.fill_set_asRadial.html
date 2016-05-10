@@ -16,12 +16,12 @@
 
             var currentPlot = chart.plot();
 
-            var series = currentPlot.splineArea(mapping);
+            var series = currentPlot.stepArea(mapping);
 
-            // Set hover fill.
-            series.hoverFill("#4CAF50", 0.2);
+            // Set fill.
+            series.fill(["#FEFEFE", "#424242"], 0.6, 0.5, null, 0.8, 0.9, 0.31);
 
-            chart.title("Set hover fill with opacity. Hover on the legend.");
+            chart.title("Set fill as a radial gradient.");
             chart.container("container");
             chart.draw();
         });
