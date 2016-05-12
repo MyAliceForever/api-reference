@@ -378,7 +378,7 @@ anychart.core.cartesian.series.Area.prototype.selectHatchFill;
  * @shortDescription Fill settings in selected mode.
  * @category Coloring
  * @detailed This method can be used as getter only if you have set its value.
- * @example anychart.core.cartesian.series.Area.fill_get
+ * @example anychart.core.cartesian.series.Area.selectFill_get
  * @return {!anychart.graphics.vector.Fill} The current fill color.
  * @since 7.7.0
  */
