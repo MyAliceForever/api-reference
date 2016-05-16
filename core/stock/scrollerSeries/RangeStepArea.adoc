@@ -2,7 +2,7 @@
  * Define RangeStepArea series type.
  * @param {!anychart.core.stock.Scroller} scroller Scroller instance.
  * @constructor
- * @extends {anychart.core.stock.scrollerSeries.ContinuousRangeBase}
+ * @extends {anychart.core.stock.scrollerSeries.Base}
  */
 anychart.core.stock.scrollerSeries.RangeStepArea;
 

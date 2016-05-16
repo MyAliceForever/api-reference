@@ -2,7 +2,7 @@
  * Define RangeColumn series type.
  * @param {!anychart.core.stock.Scroller} scroller Scroller instance.
  * @constructor
- * @extends {anychart.core.stock.scrollerSeries.WidthBased}
+ * @extends {anychart.core.stock.scrollerSeries.Base}
  */
 anychart.core.stock.scrollerSeries.RangeColumn;
 

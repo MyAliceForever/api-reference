@@ -3,7 +3,7 @@
  * @param {!anychart.charts.Stock} chart Stock chart instance.
  * @param {!anychart.core.stock.Plot} plot Plot instance.
  * @constructor
- * @extends {anychart.core.stock.series.ContinuousRangeBase}
+ * @extends {anychart.core.stock.series.Base}
  */
 anychart.core.stock.series.RangeSplineArea;
 
