@@ -9,28 +9,30 @@
             var dataTable = anychart.data.table();
             dataTable.addData(get_dji_daily_short_data());
 
-            var ohlcMapping = dataTable.mapAs({
-                open: 1,
-                high: 2,
-                low: 3,
-                close: 4
-            });
-            var lineMapping = dataTable.mapAs({value: 1});
+            var mapping = dataTable.mapAs({value: 1});
 
             chart = anychart.stock();
             chart.padding(10, 10, 10, 50);
+            chart.grouping({minPixPerPoint: 5});
+            chart.scrollerGrouping({minPixPerPoint: 5});
 
             var currentPlot = chart.plot();
-            currentPlot.ohlc(ohlcMapping);
+            currentPlot.line(mapping);
 
             var chartScroller = chart.scroller();
+            chartScroller.height("50%");
 
-            var series = chartScroller.line(lineMapping);
+            var series = chartScroller.marker(mapping);
+            series.size(6);
 
-            // Gets stroke settings in selected mode.
-            var currentStroke = series.selectStroke();
+            // Set select fill.
+            series.selectFill({
+                src: "http://static.anychart.com/images/beach.png",
+                mode: "stretch",
+                opacity: 0.5
+            });
 
-            chart.title({background: {stroke: currentStroke}});
+            chart.title("Set image fill.");
             chart.container("container");
             chart.draw();
         });
