@@ -21,12 +21,13 @@
 
             var currentPlot = chart.plot();
 
-            var series = currentPlot.candlestick(mapping);
+            var series = currentPlot.ohlc(mapping);
+            series.hoverRisingStroke("#F44336");
+            
+            // Get hover rising stroke.
+            var currentRisingStroke = series.hoverRisingStroke();
 
-            // Set rising fill.
-            series.risingFill(["#F44336", "#c5e1a5"]);
-
-            chart.title("Set rising fill.");
+            chart.title({fontColor: currentRisingStroke, text: "Get and use hover rising stroke. Hover on the legend."});
             chart.container("container");
             chart.draw();
         });

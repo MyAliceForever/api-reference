@@ -21,12 +21,14 @@
 
             var currentPlot = chart.plot();
 
-            var series = currentPlot.candlestick(mapping);
+            var series = currentPlot.ohlc(mapping);
 
-            // Set rising fill.
-            series.risingFill(["#F44336", "#c5e1a5"]);
+            // Set rising stroke.
+            series.risingStroke(function() {
+                return "2 " + anychart.color.darken(this.sourceColor)
+            });
 
-            chart.title("Set rising fill.");
+            chart.title("Set rising stroke parameter as a function.");
             chart.container("container");
             chart.draw();
         });

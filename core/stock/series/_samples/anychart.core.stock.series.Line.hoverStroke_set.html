@@ -9,24 +9,19 @@
             var dataTable = anychart.data.table();
             dataTable.addData(get_dji_daily_short_data());
 
-            var mapping = dataTable.mapAs({
-                open: 1,
-                high: 2,
-                low: 3,
-                close: 4
-            });
+            var mapping = dataTable.mapAs({value: 1});
 
             chart = anychart.stock();
             chart.padding(10, 10, 10, 50);
 
             var currentPlot = chart.plot();
 
-            var series = currentPlot.candlestick(mapping);
+            var series = currentPlot.line(mapping);
 
-            // Set rising fill.
-            series.risingFill(["#F44336", "#c5e1a5"]);
+            // Set stroke.
+            series.hoverStroke("#F44336");
 
-            chart.title("Set rising fill.");
+            chart.title("Set hover stroke. Hover on the legend.");
             chart.container("container");
             chart.draw();
         });

@@ -9,24 +9,20 @@
             var dataTable = anychart.data.table();
             dataTable.addData(get_dji_daily_short_data());
 
-            var mapping = dataTable.mapAs({
-                open: 1,
-                high: 2,
-                low: 3,
-                close: 4
-            });
+            var mapping = dataTable.mapAs({value: 1});
 
             chart = anychart.stock();
+            chart.grouping({minPixPerPoint: 50});
             chart.padding(10, 10, 10, 50);
 
             var currentPlot = chart.plot();
 
-            var series = currentPlot.candlestick(mapping);
+            var series = currentPlot.column(mapping);
 
-            // Set rising fill.
-            series.risingFill(["#F44336", "#c5e1a5"]);
+            // Set hatch fill.
+            series.hatchFill("horizontal", "#000000", 1, 3);
 
-            chart.title("Set rising fill.");
+            chart.title("Set hatch fill parameters.");
             chart.container("container");
             chart.draw();
         });
