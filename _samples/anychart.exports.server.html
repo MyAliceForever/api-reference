@@ -3,25 +3,23 @@
     <meta charset="UTF-8"/>
     <meta name="x-cat-tags" content="column"/>
     <script src="../anychart.min.js"></script>
-    <script x-export="stage">
+    <script x-export="chart">
         anychart.onDocumentReady(function() {
-            stage = anychart.graphics.create("container");
-
-            var chart = anychart.column([32, 22, 27, 40, 120, 34, 37, 100, 22]);
+            chart = anychart.column([32, 22, 27, 40, 120, 34, 37, 100, 22]);
 
             var currentLabel = chart.label();
-
-            currentLabel.background({fill: "#FFF59D", stroke: "#9E9E9E"});
+            currentLabel.background({fill: "#FFE082", stroke: "#9E9E9E"});
             currentLabel.text("Save chart");
             currentLabel.padding(2);
             currentLabel.listen("click", function() {
-                stage.saveAsJpg();
+                chart.saveAsJpg();
             });
 
-            // Sets address to export server.
-            anychart.server("http://export.anychart.com");
+            // Set address to export server.
+            anychart.exports.server("http://export.anychart.com");
 
-            chart.container(stage);
+            chart.title("Set address to export server.");
+            chart.container("container");
             chart.draw();
         });
     </script>

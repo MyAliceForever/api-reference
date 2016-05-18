@@ -24,8 +24,8 @@
             chart.choropleth(worldDataSet);
 
             chart.listen("drillChange", function(){
-                // Get current path.
-                var path = chart.getCurrentPath();
+                // Get path.
+                var path = chart.getDrilldownPath();
 
                 var properties = path[0].getProperties();
 

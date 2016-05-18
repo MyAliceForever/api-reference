@@ -278,3 +278,37 @@ anychart.graphics.patternFill;
  */
 anychart.graphics.clip;
 
+//----------------------------------------------------------------------------------------------------------------------
+//
+//  anychart.graphics.useAbsoluteReferences
+//
+//----------------------------------------------------------------------------------------------------------------------
+
+/**
+ * Whether to use absolute path to svg defs.
+ * @detailed
+ * <ul>
+ * <b>true</b> - uses absolute paths. For example: url(http://anychart.com/chart.html?query=param##ac_clip_1).
+ * <b>false</b> - uses relative paths. For example: url(##ac_clip_1).
+ * <b>null</b> - auto detects paths (if exists <base> tag, use absolute paths)
+ * </ul>
+ * @example anychart.graphics.useAbsoluteReferences
+ * @param {?boolean=} opt_value Value to set.
+ * @return {boolean|undefined} Value.
+ * @since 7.10.0
+ */
+anychart.graphics.useAbsoluteReferences;
+
+//----------------------------------------------------------------------------------------------------------------------
+//
+//  anychart.graphics.updateReferences
+//
+//----------------------------------------------------------------------------------------------------------------------
+
+/**
+ * Update all paths to svg defs.</br>
+ * Affected: "fill", "stroke", "clip-path".
+ * @example anychart.graphics.updateReferences
+ */
+anychart.graphics.updateReferences;
+
