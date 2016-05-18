@@ -288,9 +288,9 @@ anychart.graphics.clip;
  * Whether to use absolute path to svg defs.
  * @detailed
  * <ul>
- *   <li><b>true</b> </li>- uses absolute paths. For example: url(http://anychart.com/chart.html?query=param##ac_clip_1).
- *   <li><b>false</b> </li>- uses relative paths. For example: url(##ac_clip_1).
- *   <li><b>null</b> </li>- auto detects paths (if exists <base> tag, use absolute paths)
+ *   <li><b>true</b> - uses absolute paths. For example: url(http://anychart.com/chart.html?query=param##ac_clip_1).</li>
+ *   <li><b>false</b> - uses relative paths. For example: url(##ac_clip_1).</li>
+ *   <li><b>null</b> - auto detects paths (if exists <base> tag, use absolute paths).</li>
  * </ul>
  * @example anychart.graphics.useAbsoluteReferences
  * @param {?boolean=} opt_value Value to set.
