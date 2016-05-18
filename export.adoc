@@ -38,5 +38,5 @@ anychart.exports.filename;
  * @return {string} Export server script URL.
  * @since 7.10.0
  */
-anychart.exports.server = anychart.server;
+anychart.exports.server;
 

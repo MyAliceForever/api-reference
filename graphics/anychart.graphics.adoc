@@ -309,6 +309,7 @@ anychart.graphics.useAbsoluteReferences;
  * Update all paths to svg defs.</br>
  * Affected: "fill", "stroke", "clip-path".
  * @example anychart.graphics.updateReferences
+ * @since 7.10.0
  */
 anychart.graphics.updateReferences = function(){};
 

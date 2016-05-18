@@ -1,5 +1,5 @@
 /**
- * Line series class.
+ * Define Line series type.
  * @param {!anychart.charts.Stock} chart Stock chart instance.
  * @param {!anychart.core.stock.Plot} plot Plot instance.
  * @constructor
