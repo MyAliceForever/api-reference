@@ -1,10 +1,13 @@
 <html>
 <head>
-    <base href="../../">
     <meta charset="UTF-8"/>
     <meta name="x-cat-tags" content=""/>
     <script src="anychart.min.js"></script>
     <script x-export="stage">
+        var base = document.createElement("base");
+        base.href = "./../../";
+        document.head.appendChild(base);
+
         anychart.onDocumentReady(function() {
             stage = anychart.graphics.create("container");
 
