@@ -12,9 +12,11 @@ anychart.exports;
 //----------------------------------------------------------------------------------------------------------------------
 
 /**
- * Get/set file name for exported files.
+ * Sets and returns file name for exported files.
+ * @example anychart.exports.filename
  * @param {string=} opt_value New file name.
  * @return {string} Current file name.
+ * @since 7.10.0
  */
 anychart.exports.filename;
 
@@ -34,6 +36,7 @@ anychart.exports.filename;
  * @example anychart.exports.server
  * @param {string=} opt_address Export server script URL.
  * @return {string} Export server script URL.
+ * @since 7.10.0
  */
 anychart.exports.server = anychart.server;
 
