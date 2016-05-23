@@ -132,7 +132,7 @@ anychart.core.ui.LabelsFactory.prototype.textFormatter;
  * @example anychart.core.ui.LabelsFactory.textFormatter_set_asFunc
  * @param {(Function)=} opt_value [function() {return this['value'];}]
  * Function to format content label text. Function that looks like <code>function(){
- *    For discrete series (bar, column etc) and continuous series (area, line etc):
+ * For discrete series (bar, column etc) and continuous series (area, line etc):
  *    // this.index - point index
  *    // this.series - chart series
  *    // this.seriesName - series name
@@ -143,7 +143,7 @@ anychart.core.ui.LabelsFactory.prototype.textFormatter;
  *    // this.xLowerError - lower x for the series error
  *    // this.xUpperError - upper x for the series error
  *
- *    For discrete series:
+ * For discrete series:
  *    // this.clientX -	X coordinate of the mouse
  *    // this.clientY - Y coordinate of the mouse
  *

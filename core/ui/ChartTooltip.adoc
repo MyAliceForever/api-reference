@@ -29,7 +29,7 @@ anychart.core.ui.ChartTooltip.prototype.titleFormatter;
  * @example anychart.core.ui.ChartTooltip.titleFormatter_set
  * @param {Function=} opt_value [function() {return 'Union Tooltip';}]
  * Function to format title text. Function that looks like <code>function(){
- *    // this.clientX -	X coordinate of the mouse
+ *    // this.clientX - X coordinate of the mouse
  *    // this.clientY - Y coordinate of the mouse
  *    // this.formattedValues - formatted values for tooltip
  *    // this.points - points
@@ -65,12 +65,12 @@ anychart.core.ui.ChartTooltip.prototype.textFormatter;
  * @example anychart.core.ui.ChartTooltip.textFormatter_set
  * @param {Function=} opt_value [function() {return this['formattedValues'].join('\n');}]
  * Function to format content text. Function that looks like <code>function(){
- *    // this.formattedValues -	formatted values for tooltip
+ *    // this.formattedValues - formatted values for tooltip
  *    // this.valuePostfix - tooltip postfix value
- *    // this.valuePrefix -	tooltip prefix value
+ *    // this.valuePrefix - tooltip prefix value
  *    // this.allPoints - all points
  *    // this.points - points
- *    // this.clientX -	X coordinate of the mouse
+ *    // this.clientX - X coordinate of the mouse
  *    // this.clientY - Y coordinate of the mouse
  *    return textFormatterValue; // type Function
  * }</code>.

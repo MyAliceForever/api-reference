@@ -52,11 +52,11 @@ anychart.core.ui.CrosshairLabel.prototype.textFormatter;
  * @example anychart.core.ui.CrosshairLabel.textFormatter_set
  * @param {Function=} opt_value [function() {return this.value}]
  * Function to format label text. Function that looks like <code>function(){
- *    // this.max -	maximum value
+ *    // this.max - maximum value
  *    // this.min - minimum value
  *    // this.rawValue - current value
  *    // this.scale - scale
- *    // this.value -point value
+ *    // this.value - point value
  *    return textFormatterValue; // type Function
  * }</code>.
  * @return {anychart.core.ui.CrosshairLabel} Self instance for method chaining.

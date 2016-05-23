@@ -27,8 +27,8 @@ anychart.core.ui.SeriesTooltip.prototype.titleFormatter;
  * Setter for function to format title for union tooltip.
  * @param {Function=} opt_value [function() {return this.seriesName;}]
  * Function to format title text. Function that looks like <code>function(){
- *    // this.clientX -	X coordinate of the mouse
- *    // this.clientY -	Y coordinate of the mouse
+ *    // this.clientX - X coordinate of the mouse
+ *    // this.clientY - Y coordinate of the mouse
  *    // this.index - point index
  *    // this.series - chart series
  *    // this.seriesName - series name
@@ -45,7 +45,7 @@ anychart.core.ui.SeriesTooltip.prototype.titleFormatter;
  *    // this.getSeriesMeta() - series meta
  *    // this.getStat() - statistics from data
  *    // this.getTokenType() - token type
- *    // this.getTokenValue() -	token value
+ *    // this.getTokenValue() - token value
  *
  *    return titleFormatterValue; // type Function
  * }</code>.
@@ -86,9 +86,9 @@ anychart.core.ui.SeriesTooltip.prototype.textFormatter;
 /**
  * Setter for formatter content text using function.
  * @example anychart.core.ui.SeriesTooltip.textFormatter_set_asFunc
- * @param {(Function)=} opt_value [function() {return this.x+": "+this.valuePrefix+this.value+this.valuePostfix;}]
+ * @param {(Function)=} opt_formatterFunction [function() {return this.x+": "+this.valuePrefix+this.value+this.valuePostfix;}]
  * Function to format content text. Function that looks like <code>function(){
- *    For discrete series (bar, column etc) and continuous series (area, line etc):
+ * For discrete series (bar, column etc) and continuous series (area, line etc):
  *    // this.index - series index
  *    // this.series - chart series
  *    // this.seriesName - series name
@@ -101,7 +101,7 @@ anychart.core.ui.SeriesTooltip.prototype.textFormatter;
  *    // this.xLowerError - lower x for the series error
  *    // this.xUpperError - upper x for the series error
  *
- *    For discrete series:
+ * For discrete series:
  *    // this.clientX -	X coordinate of the mouse
  *    // this.clientY - Y coordinate of the mouse
  *
@@ -110,7 +110,7 @@ anychart.core.ui.SeriesTooltip.prototype.textFormatter;
  *    // this.getSeriesMeta() - series meta
  *    // this.getStat() - statistics from data
  *    // this.getTokenType() - token type
- *    // this.getTokenValue() -	token value
+ *    // this.getTokenValue() - token value
  *
  *    return textFormatterValue; // type Function or string
  * }</code>.
