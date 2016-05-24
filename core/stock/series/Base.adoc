@@ -188,7 +188,6 @@ anychart.core.stock.series.Base.prototype.name;
  * @shortDescription Switch the series type
  * @category Series
  * @example anychart.core.stock.series.Base.seriesType_get
- * @param {string=} opt_value Series type.
  * @return {string} Series type.
  * @since 7.10.0
  */
