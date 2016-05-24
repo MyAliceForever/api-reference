@@ -424,3 +424,5 @@ anychart.core.stock.series.Column.prototype.unlistenByKey;
 /** @inheritDoc */
 anychart.core.stock.series.Column.prototype.removeAllListeners;
 
+/** @inheritDoc */
+anychart.core.stock.series.Column.prototype.seriesType;

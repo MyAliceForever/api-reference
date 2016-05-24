@@ -691,3 +691,6 @@ anychart.core.cartesian.series.Column.prototype.includeAllPoints;
 
 /** @inheritDoc */
 anychart.core.cartesian.series.Column.prototype.getExcludedPoints;
+
+/** @inheritDoc */
+anychart.core.cartesian.series.Column.prototype.seriesType;

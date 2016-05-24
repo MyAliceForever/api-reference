@@ -691,3 +691,5 @@ anychart.core.cartesian.series.RangeBar.prototype.includeAllPoints;
 /** @inheritDoc */
 anychart.core.cartesian.series.RangeBar.prototype.getExcludedPoints;
 
+/** @inheritDoc */
+anychart.core.cartesian.series.RangeBar.prototype.seriesType;

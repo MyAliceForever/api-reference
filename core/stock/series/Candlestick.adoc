@@ -475,3 +475,6 @@ anychart.core.stock.series.Candlestick.prototype.getPixelPointWidth;
 /** @inheritDoc */
 anychart.core.stock.series.Candlestick.prototype.getPoint;
 
+/** @inheritDoc */
+anychart.core.stock.series.Candlestick.prototype.seriesType;
+

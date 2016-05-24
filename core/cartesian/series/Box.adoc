@@ -1278,3 +1278,5 @@ anychart.core.cartesian.series.Box.prototype.includeAllPoints;
 /** @inheritDoc */
 anychart.core.cartesian.series.Box.prototype.getExcludedPoints;
 
+/** @inheritDoc */
+anychart.core.cartesian.series.Box.prototype.seriesType;

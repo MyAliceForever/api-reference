@@ -193,3 +193,5 @@ anychart.core.stock.series.Line.prototype.unlistenByKey;
 /** @inheritDoc */
 anychart.core.stock.series.Line.prototype.removeAllListeners;
 
+/** @inheritDoc */
+anychart.core.stock.series.Line.prototype.seriesType;

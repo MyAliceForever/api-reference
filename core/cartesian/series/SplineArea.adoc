@@ -688,3 +688,5 @@ anychart.core.cartesian.series.SplineArea.prototype.includeAllPoints;
 /** @inheritDoc */
 anychart.core.cartesian.series.SplineArea.prototype.getExcludedPoints;
 
+/** @inheritDoc */
+anychart.core.cartesian.series.SplineArea.prototype.seriesType;

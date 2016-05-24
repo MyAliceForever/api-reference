@@ -480,5 +480,5 @@ anychart.core.stock.scrollerSeries.SplineArea.prototype.getPixelPointWidth;
 /** @inheritDoc */
 anychart.core.stock.scrollerSeries.SplineArea.prototype.getPoint;
 
-
-
+/** @inheritDoc */
+anychart.core.stock.scrollerSeries.SplineArea.prototype.seriesType;

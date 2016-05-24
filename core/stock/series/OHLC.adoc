@@ -226,3 +226,5 @@ anychart.core.stock.series.OHLC.prototype.unlistenByKey;
 /** @inheritDoc */
 anychart.core.stock.series.OHLC.prototype.removeAllListeners;
 
+/** @inheritDoc */
+anychart.core.stock.series.OHLC.prototype.seriesType;

@@ -691,5 +691,6 @@ anychart.core.stock.series.RangeArea.prototype.getPixelPointWidth;
 /** @inheritDoc */
 anychart.core.stock.series.RangeArea.prototype.getPoint;
 
-
+/** @inheritDoc */
+anychart.core.stock.series.RangeArea.prototype.seriesType;
 

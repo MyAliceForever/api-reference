@@ -654,4 +654,5 @@ anychart.core.stock.series.RangeSplineArea.prototype.getPixelPointWidth;
 /** @inheritDoc */
 anychart.core.stock.series.RangeSplineArea.prototype.getPoint;
 
-
+/** @inheritDoc */
+anychart.core.stock.series.RangeSplineArea.prototype.seriesType;

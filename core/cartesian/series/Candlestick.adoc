@@ -920,3 +920,6 @@ anychart.core.cartesian.series.Candlestick.prototype.includeAllPoints;
 
 /** @inheritDoc */
 anychart.core.cartesian.series.Candlestick.prototype.getExcludedPoints;
+
+/** @inheritDoc */
+anychart.core.cartesian.series.Candlestick.prototype.seriesType;

@@ -379,3 +379,5 @@ anychart.core.stock.scrollerSeries.Column.prototype.unlistenByKey;
 /** @inheritDoc */
 anychart.core.stock.scrollerSeries.Column.prototype.removeAllListeners;
 
+/** @inheritDoc */
+anychart.core.stock.scrollerSeries.Column.prototype.seriesType;

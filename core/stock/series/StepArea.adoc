@@ -632,4 +632,5 @@ anychart.core.stock.series.StepArea.prototype.getPixelPointWidth;
 /** @inheritDoc */
 anychart.core.stock.series.StepArea.prototype.getPoint;
 
-
+/** @inheritDoc */
+anychart.core.stock.series.StepArea.prototype.seriesType;

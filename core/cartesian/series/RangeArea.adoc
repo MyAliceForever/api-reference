@@ -828,3 +828,5 @@ anychart.core.cartesian.series.RangeArea.prototype.includeAllPoints;
 /** @inheritDoc */
 anychart.core.cartesian.series.RangeArea.prototype.getExcludedPoints;
 
+/** @inheritDoc */
+anychart.core.cartesian.series.RangeArea.prototype.seriesType;
