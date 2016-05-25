@@ -6,8 +6,12 @@
     <script x-export="chart">
         anychart.onDocumentReady(function() {
             chart = anychart.polar([1, 4, 5, 7, 2]);
-            var xAxis = chart.xAxis(); // get xAxis
-            xAxis.stroke("#008000");
+
+            // Get X-axis.
+            var currentXAxis = chart.xAxis();
+            currentXAxis.stroke("#2196F3");
+
+            chart.title("Get and modify chart xAxis.");
             chart.container("container");
             chart.draw();
         });

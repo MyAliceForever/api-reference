@@ -6,8 +6,12 @@
     <script x-export="chart">
         anychart.onDocumentReady(function() {
             chart = anychart.polar([2, 8, 4, 10]);
-            var scale = chart.xScale(); // get xScale
+
+            // Get X-scale.
+            var scale = chart.xScale();
             scale.inverted(true);
+
+            chart.title("Get and use xScale object.");
             chart.container("container");
             chart.draw();
         });

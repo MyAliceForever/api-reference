@@ -39,7 +39,7 @@ anychart.charts.Polar.prototype.startAngle;
 //----------------------------------------------------------------------------------------------------------------------
 
 /**
- * Getter for default chart X scale.
+ * Getter for the default chart X scale.
  * @shortDescription X-scale settings.
  * @category Axes and Scales
  * @example anychart.charts.Polar.xScale_get
@@ -48,8 +48,8 @@ anychart.charts.Polar.prototype.startAngle;
 anychart.charts.Polar.prototype.xScale;
 
 /**
- * Setter for default chart X scale.<br/>
- * <b>Note:</b> This scale will be passed to all scale dependent chart elements if they don't have their own scales.
+ * Setter for the chart X scale.
+ * @detailed <b>Note:</b> This scale will be passed to all scale dependent chart elements if they don't have their own scales.
  * @example anychart.charts.Polar.xScale_set
  * @param {(anychart.enums.ScatterScaleTypes|anychart.scales.ScatterBase)=} opt_value ["linear"] X Scale to set.
  * @return {anychart.charts.Polar} Self instance for method chaining.
@@ -64,7 +64,7 @@ anychart.charts.Polar.prototype.xScale;
 //----------------------------------------------------------------------------------------------------------------------
 
 /**
- * Getter for default chart Y scale.
+ * Getter for the default chart Y scale.
  * @shortDescription Y-scale settings.
  * @category Axes and Scales
  * @example anychart.charts.Polar.yScale_get
@@ -73,8 +73,8 @@ anychart.charts.Polar.prototype.xScale;
 anychart.charts.Polar.prototype.yScale;
 
 /**
- * Setter for default chart Y scale.<br/>
- * <b>Note:</b> This scale will be passed to all scale dependent chart elements if they don't have their own scales.
+ * Setter for the chart Y scale.
+ * @detailed <b>Note:</b> This scale will be passed to all scale dependent chart elements if they don't have their own scales.
  * @example anychart.charts.Polar.yScale_set
  * @param {(anychart.enums.ScatterScaleTypes|anychart.scales.ScatterBase)=} opt_value ["linear"] Y Scale to set.
  * @return {anychart.charts.Polar} Self instance for method chaining.
@@ -89,17 +89,17 @@ anychart.charts.Polar.prototype.yScale;
 //----------------------------------------------------------------------------------------------------------------------
 
 /**
- * Getter for chart grid.
+ * Getter for the chart grid.
  * @shortDescription Grid settings.
  * @category Axes and Scales
  * @example anychart.charts.Polar.grid_get
  * @param {number=} opt_index Chart grid index. If not set - creates a new instance and adds it to the end of array.
- * @return {!anychart.core.grids.Polar} Axis instance by index.
+ * @return {!anychart.core.grids.Polar} Grid instance by index.
  */
 anychart.charts.Polar.prototype.grid;
 
 /**
- * Setter for first chart grid.
+ * Setter for the chart grid.
  * @detailed Sets chart grid settings depending on parameter type:
  * <ul>
  *   <li><b>null/boolean</b> - disable or enable chart grid.</li>
@@ -135,17 +135,17 @@ anychart.charts.Polar.prototype.grid;
 //----------------------------------------------------------------------------------------------------------------------
 
 /**
- * Getter for chart minor grid.
+ * Getter for the chart minor grid.
  * @shortDescription Minor grid settings.
  * @category Axes and Scales
  * @example anychart.charts.Polar.minorGrid_get
  * @param {number=} opt_index Chart grid index. If not set - creates a new instance and adds it to the end of array.
- * @return {!anychart.core.grids.Polar} Axis instance by index.
+ * @return {!anychart.core.grids.Polar} Minor grid instance by index.
  */
 anychart.charts.Polar.prototype.minorGrid;
 
 /**
- * Setter for chart minor grid.
+ * Setter for the chart minor grid.
  * @detailed Sets chart minor grid settings depending on parameter type:
  * <ul>
  *   <li><b>null/boolean</b> - disable or enable chart minor grid.</li>
@@ -159,7 +159,7 @@ anychart.charts.Polar.prototype.minorGrid;
 anychart.charts.Polar.prototype.minorGrid;
 
 /**
- * Setter for chart minor grid by index.
+ * Setter for the chart minor grid by index.
  * @detailed Sets chart minor grid by index settings depending on parameter type:
  * <ul>
  *   <li><b>null/boolean</b> - disable or enable chart minor grid by index.</li>
@@ -181,17 +181,17 @@ anychart.charts.Polar.prototype.minorGrid;
 //----------------------------------------------------------------------------------------------------------------------
 
 /**
- * Getter for chart X-axis.
+ * Getter for the chart X-axis.
  * @shortDescription X-axis settings.
  * @category Axes and Scales
  * @example anychart.charts.Polar.xAxis_get
- * @return {!anychart.core.axes.Radar} Axis instance by index.
+ * @return {!anychart.core.axes.Radar} X-axis instance by index.
  */
 anychart.charts.Polar.prototype.xAxis;
 
 /**
- * Setter for chart X-axis.
- * @detailed You can't use multiple axes for a polar chart.
+ * Setter for the chart X-axis.
+ * @detailed You can't use multiple axes for a polar chart.<br/>
  * Sets chart X-axis settings depending on parameter type:
  * <ul>
  *   <li><b>null/boolean</b> - disable or enable chart X-axis.</li>
@@ -212,7 +212,7 @@ anychart.charts.Polar.prototype.xAxis;
 //----------------------------------------------------------------------------------------------------------------------
 
 /**
- * Getter for chart Y-axis.
+ * Getter for the chart Y-axis.
  * @shortDescription Y-axis settings.
  * @category Axes and Scales
  * @example anychart.charts.Polar.yAxis_get
@@ -221,7 +221,7 @@ anychart.charts.Polar.prototype.xAxis;
 anychart.charts.Polar.prototype.yAxis;
 
 /**
- * Setter for chart Y-axis.
+ * Setter for the chart Y-axis.
  * @detailed You can't use multiple axes for a polar chart.
  * Sets chart X-axis settings depending on parameter type:
  * <ul>
