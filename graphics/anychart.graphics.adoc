@@ -290,7 +290,7 @@ anychart.graphics.clip;
  * <ul>
  *   <li><b>true</b> - uses absolute paths. For example: url(http://anychart.com/chart.html?query=param##ac_clip_1).</li>
  *   <li><b>false</b> - uses relative paths. For example: url(##ac_clip_1).</li>
- *   <li><b>null</b> - auto detects paths (if exists <base> tag, use absolute paths).</li>
+ *   <li><b>null</b> - auto detects paths (uses absolute paths, if  <base> tag is exists).</li>
  * </ul>
  * @example anychart.graphics.useAbsoluteReferences
  * @param {?boolean=} opt_value Value to set.
