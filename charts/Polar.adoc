@@ -15,11 +15,11 @@ anychart.charts.Polar;
 //----------------------------------------------------------------------------------------------------------------------
 
 /**
- * Getter for the current chart start angle.
+ * Getter for the chart start angle.
  * @shortDescription Chart start angle.
  * @category Specific settings
  * @example anychart.charts.Polar.startAngle_get
- * @return {(string|number)} The current chart start angle.
+ * @return {(string|number)} The chart start angle.
  */
 anychart.charts.Polar.prototype.startAngle;
 
