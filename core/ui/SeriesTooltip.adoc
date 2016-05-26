@@ -30,7 +30,7 @@ anychart.core.ui.SeriesTooltip.prototype.titleFormatter;
  *    // this.clientX - X coordinate of the mouse
  *    // this.clientY - Y coordinate of the mouse
  *    // this.index - series point index
- *    // this.series - chart series
+ *    // this.series - current chart series
  *    // this.seriesName - series name
  *    // this.titleText - title text
  *    // this.value - series point value
@@ -90,7 +90,7 @@ anychart.core.ui.SeriesTooltip.prototype.textFormatter;
  * Function to format content text. Function that looks like <code>function(){
  * For discrete series (bar, column etc) and continuous series (area, line etc):
  *    // this.index - series index
- *    // this.series - chart series
+ *    // this.series - current chart series
  *    // this.seriesName - series name
  *    // this.value - series point value
  *    // this.valueLowerError - lower value for the series error
