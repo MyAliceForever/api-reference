@@ -6,14 +6,21 @@
     <script x-export="chart">
         anychart.onDocumentReady(function() {
             chart = anychart.polar();
-            var lightBlueSeries = chart.line([1, -4, 5, 7]);
+
+            var lightBlueSeries = chart.line([6, 1, 6, 1, 6, 1]);
             lightBlueSeries.markers(true);
-            var blueSeries = chart.line([11, 0, 15, 4]);
+
+            var blueSeries = chart.line([2, 8, 2, 8, 2, 8]);
             blueSeries.markers(true);
-            var orangeSeries = chart.line([21, -4, 9, 0]);
+
+            var orangeSeries = chart.line([10, 15, 10, 15, 10, 15]);
             orangeSeries.markers(true);
-            var getMarkerPalette = chart.markerPalette(); // get markers palette
+
+            // Get markers palette.
+            var getMarkerPalette = chart.markerPalette();
             getMarkerPalette.markerAt(1, "cross");
+
+            chart.title("Get and use marker palette.");
             chart.container("container");
             chart.draw();
         });
