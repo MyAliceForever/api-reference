@@ -30,13 +30,13 @@
             australiaMap = anychart.map();
             australiaMap.geoData(anychart.maps.australia);
 
-            // Creates palette
-            var myPalette = anychart.palettes.rangeColors();
-            myPalette.colors(["#B2DFDB", "#00796B"]);
-            myPalette.count(3);
+            // Create palette
+            var customPalette = anychart.palettes.rangeColors();
+            customPalette.colors(["#B2DFDB", "#00796B"]);
+            customPalette.count(3);
 
-            // Sets palette.
-            australiaMap.palette(myPalette);
+            // Set palette.
+            australiaMap.palette(customPalette);
 
             var firstSeries = australiaMap.choropleth(firstDataSetForSeries);
             firstSeries.geoIdField("code_hasc");
@@ -47,6 +47,7 @@
             var thirdSeries = australiaMap.choropleth(thirdDataSetForSeries);
             thirdSeries.geoIdField("code_hasc");
 
+            australiaMap.title("Set map palette parameter as an instance.");
             australiaMap.container("container");
             australiaMap.draw();
         });
