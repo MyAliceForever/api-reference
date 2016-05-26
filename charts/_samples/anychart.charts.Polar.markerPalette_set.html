@@ -1,0 +1,31 @@
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="x-cat-tags" content="polar line"/>
+    <script src="../../anychart.min.js"></script>
+    <script x-export="chart">
+        anychart.onDocumentReady(function() {
+            chart = anychart.polar();
+
+            var lightBlueSeries = chart.line([6, 1, 6, 1, 6, 1]);
+            lightBlueSeries.markers({size: 10});
+
+            var blueSeries = chart.line([2, 8, 2, 8, 2, 8]);
+            blueSeries.markers({size: 10});
+
+            var orangeSeries = chart.line([10, 15, 10, 15, 10, 15]);
+            orangeSeries.markers({size: 10});
+
+            // Set markers palette.
+            chart.markerPalette(["line", "star5", "triangleUp"]);
+
+            chart.title("Set marker palette.");
+            chart.container("container");
+            chart.draw();
+        });
+    </script>
+</head>
+<body>
+<div id="container" style="width: 100%; height: 100%"></div>
+</body>
+</html>
