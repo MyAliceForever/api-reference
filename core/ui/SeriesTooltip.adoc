@@ -29,14 +29,14 @@ anychart.core.ui.SeriesTooltip.prototype.titleFormatter;
  * Function to format title text. Function that looks like <code>function(){
  *    // this.clientX - X coordinate of the mouse
  *    // this.clientY - Y coordinate of the mouse
- *    // this.index - point index
+ *    // this.index - series point index
  *    // this.series - chart series
  *    // this.seriesName - series name
- *    // this.titleText -title text
- *    // this.value - point value
+ *    // this.titleText - title text
+ *    // this.value - series point value
  *    // this.valueLowerError - lower value for the series error
  *    // this.valueUpperError - upper value for the series error
- *    // this.x - point x
+ *    // this.x - series point x
  *    // this.xLowerError - lower x for the series error
  *    // this.xUpperError - upper x for the series error
  *
@@ -92,12 +92,12 @@ anychart.core.ui.SeriesTooltip.prototype.textFormatter;
  *    // this.index - series index
  *    // this.series - chart series
  *    // this.seriesName - series name
- *    // this.value - point value
+ *    // this.value - series point value
  *    // this.valueLowerError - lower value for the series error
  *    // this.valuePostfix - tooltip postfix value
  *    // this.valuePrefix - tooltip prefix value
  *    // this.valueUpperError - upper value for the series error
- *    // this.x - point x
+ *    // this.x - series point x
  *    // this.xLowerError - lower x for the series error
  *    // this.xUpperError - upper x for the series error
  *

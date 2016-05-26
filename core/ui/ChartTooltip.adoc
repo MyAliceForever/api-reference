@@ -31,10 +31,10 @@ anychart.core.ui.ChartTooltip.prototype.titleFormatter;
  * Function to format title text. Function that looks like <code>function(){
  *    // this.clientX - X coordinate of the mouse
  *    // this.clientY - Y coordinate of the mouse
- *    // this.formattedValues - formatted values for tooltip
- *    // this.points - points
- *    // this.allPoints - all points
- *    // this.titleText - title text
+ *    // this.formattedValues - array of the formatted values for the tooltip
+ *    // this.points - array of the series points
+ *    // this.allPoints - array of the all points
+ *    // this.titleText - tooltip title text
  *    return titleFormatterValue; // type Function
  * }</code>.
  * @return {anychart.core.ui.ChartTooltip} Self instance for method chaining.
@@ -68,8 +68,8 @@ anychart.core.ui.ChartTooltip.prototype.textFormatter;
  *    // this.formattedValues - formatted values for tooltip
  *    // this.valuePostfix - tooltip postfix value
  *    // this.valuePrefix - tooltip prefix value
- *    // this.allPoints - all points
- *    // this.points - points
+ *    // this.allPoints - array of the all points
+ *    // this.points - array of the series points
  *    // this.clientX - X coordinate of the mouse
  *    // this.clientY - Y coordinate of the mouse
  *    return textFormatterValue; // type Function

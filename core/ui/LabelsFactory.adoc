@@ -136,10 +136,10 @@ anychart.core.ui.LabelsFactory.prototype.textFormatter;
  *    // this.index - point index
  *    // this.series - chart series
  *    // this.seriesName - series name
- *    // this.value - point value
+ *    // this.value - series point value
  *    // this.valueLowerError - lower value for the series error
  *    // this.valueUpperError - upper value for the series error
- *    // this.x - point x
+ *    // this.x - series point x
  *    // this.xLowerError - lower x for the series error
  *    // this.xUpperError - upper x for the series error
  *
